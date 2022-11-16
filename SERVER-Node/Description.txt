@@ -1,0 +1,22 @@
+		PIZZERIA APP SERVER
+
+ This is a Dynamic App Server Which uses Express and MongoClient to connect to MongoDB database !
+ 
+ Here is the List of API's for this Server
+    
+    BaseUrl : "http://localhost:3300"
+    
+(EndPoints)
+ 1)  "/getpizza"          (GET METHOD)      //to fetch pizza items from pizzadb
+
+ 2) "/getingredients"     (GET METHOD)      //to fetch ingredienrs from ingredients database
+
+ 3) "/getuser"            (GET METHOD)      // to fetch user from userdb for verification.
+
+ 4) "/adduser"            (POST METHOD)     //Add new user to db after registering.
+
+ 5)"/getcart/:email"      (GET METHOD)      //Get the cart items of a given user(id=email)
+
+ 6) "/addcart"            (POST METHOD)     //add item to cart for a user to cartdb
+
+ 7)"/deletecart/:name"    (DELETE METHOD)   // Delete a cart item for given user based on name of item.

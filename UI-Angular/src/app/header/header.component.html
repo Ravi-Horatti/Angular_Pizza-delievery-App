@@ -1,0 +1,50 @@
+<!-- 
+    <div class="row , container"  style="background-color: black; width: 100%;">
+       
+        <ul class="nav navbar-nav" routerLinkActive="active">
+          <li ><h2 style="color:cornsilk">Pizzeria</h2></li> 
+         
+            <li class="nav-item"><a class="nav-link" routerLink="home" style="left: 25% ;"> <img
+              width="50"
+              alt="pizzeria Logo"
+              src="../assets/PizzeriaLogo.png"
+            /> </a></li>
+            <li class="nav-item" style="left: 25% ;"><a class="nav-link" routerLink="order-pizza">OrderPizza</a></li>
+            <li class="nav-item" style="left: 40% ;"><a class="nav-link" routerLink="build-pizza">Build Ur Pizza</a></li>
+            <li class="nav-item" style="position:absolute ;left: 70%">
+              <a routerLink="cart"><img
+                width="30"
+                alt="pizzeria Logo"
+                src="../assets/CART.svg"
+              /> </a></li>
+              
+        </ul>
+    </div>
+   -->
+
+
+   <header>
+    <div class="navbar navbar-inverse" style="background-color: black;font-size: 18px;">
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li style="font-size: 24px;"><a class="navbar-brand">Pizzeria</a></li> 
+          <li><a routerLink="/home"><img src="../assets/PizzeriaLogo.png" height="55" width="80"></a></li>
+          <li><a routerLink="/order-pizza">Order Pizza</a></li>
+          <li><a routerLink="/build-pizza">Build Ur Pizza</a></li>
+         
+        </ul>
+        <!-- <h4 id="logs" [hidden]="true" style="color: blue;" ></h4> -->
+        <ul class="nav navbar-nav navbar-right">
+     
+          <br>
+          <li ><span style="color: orange">Welcome </span><span style="color: blueviolet;" id="usern"> {{Guest}} !</span></li>
+  
+          <!-- <li><button routerLink="/login" class="btn btn-warning" ><span class="glyphicon glyphicon-user"> Login !</span></button></li> -->
+          <li><button routerLink="/cart" class="btn btn-warning"><span class="glyphicon glyphicon-shopping-cart"></span>Shopping cart</button></li>
+        </ul>
+      </div>
+    </div>
+    </header>
+
+
+  

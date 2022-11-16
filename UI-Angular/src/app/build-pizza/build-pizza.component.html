@@ -1,0 +1,21 @@
+
+<div class="container" style=" padding-left: 13%;">
+    <p>Pizzeria now gives you options to build your own pizza. Customize your pizza by choosing ingredients from the list given below</p>
+    <table border="5" style="width: 80%;">
+       
+        <tr *ngFor='let l of contlist'  style="height: 5ex;">
+            <td  style="text-align: center;"> <img src="{{l.image}}"  width="80" alt="ingredients"/> </td>
+            <td style="text-align: center;font-size: 22px;"> {{l.tname}}  ₹ {{l.price}}</td>
+            <td style="color: coral;text-align: center;"><input type="checkbox" (change)=calprice(l.price,$event.target.checked)/> 
+               <br><button style="background-color:blue;color: whitesmoke;" (click)=addtocart(l) >  Add</button>
+            </td>
+           
+          </tr>
+          <tr style="color: darkblue;font-size: 2em;text-align: center;" >
+            <td></td><td id="p"></td><td></td> </tr>
+         
+    </table>
+    <div class="btn btn-right" style="padding-left: 40%;">
+        <!-- <button style="background-color: black;color: whitesmoke;" (click)=addtocart(l) >Build Ur Pizza</button> -->
+    </div>
+</div>

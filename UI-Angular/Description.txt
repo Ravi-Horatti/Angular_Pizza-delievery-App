@@ -1,0 +1,21 @@
+		PIZZERIA APP
+
+ This is a Responsive Pizza ordering Web App Using Angular  and Bootstrap and CSS.
+
+Angular App Contains 8 Components :
+
+BuildPizza :-> here Customer can select Toppings based on his needs.
+Cart :-> User can goto his cart page and can place order or can remove items from it.
+OrderPizza :-> a User can Order Pizza from this page on his need from provided items
+Home :-> This is Home page which user will be directed after login !
+Login :-> Login page where user has to login to select pizza and place a order for it .
+Register :-> If the user is new to page he can register himself here 
+Header-Footer :->this Component has Navbar for different links and footer information of copyrights!
+
+This App also Contains Four(4) Services for Fetching and Updating to Backend :
+
+BuildServise :-> To Fetch items for building own Pizza and updating selected items to respective cart.
+CartService :->To Fetch items from cartdb and place order and remove items if user do so.
+LoginService :->To verify a User for his Authenticity and Add New user to DB
+OrderService :-> To Fetch Pizza items  and updating selected Pizza to respective users cart.
+

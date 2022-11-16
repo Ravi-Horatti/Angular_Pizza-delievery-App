@@ -1,0 +1,42 @@
+
+
+<div class="container">
+ 
+    <div class="row card-group">
+    <div class="col-md-6" *ngFor="let pizza of pizalist">
+    
+    <div class="row my-2" style="border: 1px solid; height: 350px;">
+    <div class="col-md-2">
+    <h4>{{pizza.name}}</h4>
+    <!--  -->
+    <div style="width: 20; height: 20;" id = {{pizza.type}}>
+       <img *ngIf="pizza.type == 'veg' "  style="width: 40%; height: 40%;" src="../assets/veg.svg"  />
+      <img *ngIf="pizza.type == 'nonveg' "   style="width: 40%; height: 40%;"  src="../assets/nonveg.svg"  />
+      
+    </div>
+    <p class="mt-5" style="font-size: 0.5cm;">{{pizza.price|currency:'INR'}}</p>
+    </div>
+    
+    
+    <div class="col-md-6" >
+    <p>{{pizza.description}}</p>
+    
+    <p><b>Ingredients : </b>{{pizza.ingredients.toString()}}</p>
+    <p><b>Toppings : </b>{{pizza.topping.toString()}}</p>
+    
+    </div>
+    
+    <div class="col-md-4">
+    <img class="img-fluid" width="180" src={{pizza.image}} />
+    <div class="text-center">
+    <button (click)="onAdd(pizza)" class="btn btn-warning">Add to Cart</button>
+    <p id={{pizza._id}}  [hidden]="true" class="text-success">Added!!</p>
+    </div>
+    
+    </div>
+    </div>
+    
+    </div>
+    </div>
+    
+   </div>

@@ -1,0 +1,12 @@
+table {
+    width: 20;
+    border: solid black;
+    border-collapse: collapse;
+}
+
+td {
+    /* border: solid rgb(210, 242, 248); */
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-radius: 5px;
+}

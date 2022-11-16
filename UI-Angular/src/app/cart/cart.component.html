@@ -1,0 +1,24 @@
+<div class="container">
+    <h1> </h1>
+    <h3 style="color: darkolivegreen;">You have selected !</h3>
+   
+    <table  class="table table-striped table-hover" >
+        <tr  style="text-align: center;color: darkorange;font-size: 2em; border: solid rgb(210, 242, 248);">
+            <td>Item Name</td>
+            <td>Price in ₹</td>
+            <td>Unselect</td>
+        </tr>
+    <tr *ngFor="let p of pizzcart"  style="text-align: center;    border: solid rgb(210, 242, 248); ">          
+        <td style="color: blueviolet;font-size: 165%;">{{p.name}}</td>
+        <td  style="color: rgb(14, 161, 180);font-size: 165%;">{{p.price}}</td>
+         <td><button (click)=delpizza(p.name) class="btn btn-danger">Remove</button></td> 
+    </tr>
+    </table>
+ 
+    <div class="row" style="text-align: center;">
+            <button class="btn btn-warning" (click)=Bill() >Check Bill</button>
+         
+             <h3 id="p" style="color: cornflowerblue;font-size: 2em;"> </h3>
+    </div>
+             
+    </div>
